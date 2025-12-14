@@ -1,0 +1,41 @@
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - 3000:3000
+    volumes:
+      - ./config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  kvm-192-168-35-5:
+    image: ipmi-kvm-docker:latest
+    container_name: kvm-192-168-35-5
+    environment:
+      - start_url=https://192.168.35.5
+    ports:
+      - 8081:8080
+
+  kvm-192-168-35-141:
+    image: ipmi-kvm-docker:latest
+    container_name: kvm-192-168-35-141
+    environment:
+      - start_url=https://192.168.35.141
+    ports:
+      - 8082:8080
+
+  kvm-192-168-35-195:
+    image: ipmi-kvm-docker:latest
+    container_name: kvm-192-168-35-195
+    environment:
+      - start_url=https://192.168.35.195
+    ports:
+      - 8083:8080
+
+  kvm-192-168-35-214:
+    image: ipmi-kvm-docker:latest
+    container_name: kvm-192-168-35-214
+    environment:
+      - start_url=https://192.168.35.214
+    ports:
+      - 8084:8080

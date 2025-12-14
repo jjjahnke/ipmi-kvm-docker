@@ -1,0 +1,9 @@
+--- 
+title: "Tiny Dashboard" 
+layout:
+  Proxmox Cluster:
+    style: row
+    columns: 3
+  Management Plane:
+    style: row
+    columns: 4

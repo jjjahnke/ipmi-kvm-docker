@@ -1,0 +1,48 @@
+---
+- Proxmox Cluster:
+    - Node 192-168-35-51:
+        icon: proxmox
+        href: https://192.168.35.51:8006
+        description: "Proxmox Node"
+    - Node 192-168-35-53:
+        icon: proxmox
+        href: https://192.168.35.53:8006
+        description: "Proxmox Node"
+    - Node 192-168-35-54:
+        icon: proxmox
+        href: https://192.168.35.54:8006
+        description: "Proxmox Node"
+
+- Management Plane:
+    - IPMI 192-168-35-5 (Direct):
+        icon: mdi-server
+        href: https://192.168.35.5
+        description: "Direct Management"
+    - IPMI 192-168-35-5 (Console):
+        icon: mdi-console
+        href: http://localhost:8081
+        description: "KVM Console (Proxy)"
+    - IPMI 192-168-35-141 (Direct):
+        icon: mdi-server
+        href: https://192.168.35.141
+        description: "Direct Management"
+    - IPMI 192-168-35-141 (Console):
+        icon: mdi-console
+        href: http://localhost:8082
+        description: "KVM Console (Proxy)"
+    - IPMI 192-168-35-195 (Direct):
+        icon: mdi-server
+        href: https://192.168.35.195
+        description: "Direct Management"
+    - IPMI 192-168-35-195 (Console):
+        icon: mdi-console
+        href: http://localhost:8083
+        description: "KVM Console (Proxy)"
+    - IPMI 192-168-35-214 (Direct):
+        icon: mdi-server
+        href: https://192.168.35.214
+        description: "Direct Management"
+    - IPMI 192-168-35-214 (Console):
+        icon: mdi-console
+        href: http://localhost:8084
+        description: "KVM Console (Proxy)"
